@@ -7,7 +7,9 @@
   font-family: "Montserrat", sans-serif;
   --dark: #222;
   --darkgreen: #465b52;
-  --light: #e3e6f3;
+  --light: #ffffff;
+  --lightgrey: #f9f7f7;
+  --difgreen: #24f220cc;
 }
 
 h1 {
@@ -25,6 +27,7 @@ h2 {
 h4 {
   font-size: 20px;
   color: var(--dark);
+  font-weight: 400;
 }
 
 h6 {
@@ -34,7 +37,8 @@ h6 {
 
 p {
   font-size: 16px;
-  color: var(--darkgreen);
+  line-height: 30px;
+  color: white;
 }
 
 .section-p1 {
@@ -55,8 +59,12 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background: var(--light);
+  background: var(--lightgrey);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -89,13 +97,39 @@ body {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: var(--difgreen);
   position: absolute;
   bottom: -4px;
   left: 21px;
 }
 
 /* HOME PAGE */
+#hero {
+  background-image: url(/assets/images/taylor-smith-aDZ5YIuedQg-unsplash.jpg);
+  height: 90vh;
+  width: 100%;
+  object-fit: cover; /* This property ensures the image covers the entire container */
+  background-size: cover; /* This property also helps in covering the entire container */
+  background-position: bottom 35% right 0; /* You can write "center" instead */
+  padding: 0 60px; /*text padding from the left*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+#hero h1 {
+  color: var(--difgreen);
+}
+
+#hero button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
 
 /* SHOP PAGE*/
 
