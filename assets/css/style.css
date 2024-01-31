@@ -163,6 +163,8 @@ body {
 
 #product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  outline: 1px solid var(--darkgreen);
+  transition: 0.1s linear;
 }
 
 #product1 .pro img {
