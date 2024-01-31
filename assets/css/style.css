@@ -214,6 +214,43 @@ body {
   right: 10px;
 }
 
+#store h2 {
+  text-align: center;
+  line-height: 90px;
+}
+
+.shopcontainer {
+  background-image: url(/assets/images/background/BertoBaltimoreMag-5_CMYK.jpg);
+  opacity: 0.95;
+  height: 90vh;
+  width: 100%;
+  object-fit: cover; /* This property ensures the image covers the entire container */
+  background-size: cover; /* This property also helps in covering the entire container */
+  background-position: center 35% right 0; /* You can write "center" instead */
+  padding: 0 60px; /*text padding from the left*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 25px 25px 25px 25px;
+}
+
+#store h4 {
+  opacity: 1 !important;
+  font-size: 35px;
+  color: var(--light);
+  line-height: 60px;
+}
+
+#store .btn {
+  opacity: 1 !important;
+  font-weight: 1000;
+}
+
+#store .btn:hover {
+  transform: scale(1.1);
+  opacity: 1 !important;
+}
 /* SHOP PAGE*/
 
 /* SINGLE PRODUCT*/
