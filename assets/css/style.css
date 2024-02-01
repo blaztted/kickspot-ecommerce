@@ -392,4 +392,42 @@ footer .icon .face {
   #lg-bag {
     display: none;
   }
+
+  #hero {
+    height: 70vh;
+    padding: 0 60px; /*text padding from the left*/
+    background-position: top 30% right 40%;
+  }
+re
+  #product1 .pro-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 15px;
+  }
+
+  #store{
+    padding: 0; 
+  }
+
+  .shopcontainer {
+    min-width: 100%;
+    height: 70vh;
+    border-radius:10px;
+    align-items: flex-start;
+  }
+
+
+    #store h4 {
+      font-size: 24px;
+      color: var(--light);
+      line-height: 40px;
+    }
+
+    #store .btn {
+      opacity: 1 !important;
+      font-weight: 600;
+    }
+  }
 }
