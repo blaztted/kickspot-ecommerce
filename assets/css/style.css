@@ -104,6 +104,15 @@ body {
   left: 21px;
 }
 
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
 /* HOME PAGE */
 #hero {
   background-image: url(/assets/images/background/taylor-smith-aDZ5YIuedQg-unsplash.jpg);
@@ -290,6 +299,7 @@ footer .col a:hover {
 
 footer .follow {
   margin-top: 20px;
+  margin-left: 42px;
 }
 
 footer .follow i {
@@ -308,9 +318,21 @@ footer .copyright {
   text-align: center;
 }
 
+footer .icon {
+  margin-right: 30px;
+}
+
+footer .icon .face {
+  margin-right: 20px;
+}
+
 .logo-footer {
   align-items: center;
   line-height: 90px;
+}
+
+.footabout {
+  margin-bottom: 1000px;
 }
 
 /* SHOP PAGE*/
@@ -320,3 +342,54 @@ footer .copyright {
 /* ARTIGOS*/
 
 /* ABOUT PAGE */
+
+/*START MEDIA QUERY*/
+@media (max-width: 799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--lightgrey);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: var(--dark);
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: var(--dark);
+    font-size: 24px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+}
