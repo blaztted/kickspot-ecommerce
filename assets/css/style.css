@@ -270,8 +270,8 @@ footer {
 footer .col {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
@@ -329,6 +329,8 @@ footer .icon .face {
 .logo-footer {
   align-items: center;
   line-height: 90px;
+  margin-right: 300px;
+  padding-bottom: 50px;
 }
 
 .footabout {
@@ -336,6 +338,42 @@ footer .icon .face {
 }
 
 /* SHOP PAGE*/
+#page-header {
+  background-image: url("/assets/images/background/deepal-tamang--aMhLQwGd2g-unsplash.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center 70%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  font-weight: 700;
+  color: var(--light);
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: var(--dark);
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: var(--light);
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
 
 /* SINGLE PRODUCT*/
 
@@ -398,7 +436,6 @@ footer .icon .face {
     padding: 0 60px; /*text padding from the left*/
     background-position: top 30% right 40%;
   }
-re
   #product1 .pro-container {
     justify-content: center;
   }
@@ -407,27 +444,51 @@ re
     margin: 15px;
   }
 
-  #store{
-    padding: 0; 
+  #store {
+    padding: 0;
   }
 
   .shopcontainer {
     min-width: 100%;
     height: 70vh;
-    border-radius:10px;
+    border-radius: 10px;
     align-items: flex-start;
   }
 
+  #store h4 {
+    font-size: 24px;
+    color: var(--light);
+    line-height: 40px;
+  }
 
-    #store h4 {
-      font-size: 24px;
-      color: var(--light);
-      line-height: 40px;
-    }
+  #store .btn {
+    opacity: 1 !important;
+    font-weight: 600;
+  }
+}
 
-    #store .btn {
-      opacity: 1 !important;
-      font-weight: 600;
-    }
+@media (max-width: 477px) {
+  #header {
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  #hero {
+    padding: 0 20px; /*text padding from the left*/
+    background-position: 55%;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+  .shopcontainer {
+    height: 60vh;
   }
 }
