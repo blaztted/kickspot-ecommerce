@@ -434,6 +434,10 @@ footer .icon .face {
   font-size: 22px;
 }
 
+#prodetails .single-pro-details span {
+  line-height: 25px;
+}
+
 s {
   text-decoration: line-through;
 }
@@ -551,5 +555,23 @@ s {
   }
   .shopcontainer {
     height: 60vh;
+  }
+  /* Single Product */
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+
+  .section-p1 {
+    padding: 20px 40px; /* PADDING DA IMAGEM PRINCIPAL E 4 SMALL ONES  */
   }
 }
