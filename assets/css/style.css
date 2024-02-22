@@ -444,6 +444,10 @@ s {
 
 /* ARTIGOS*/
 
+#page-header.blog-header {
+  background-image: url("/assets/images/background/library.jpg");
+}
+
 /* ABOUT PAGE */
 
 /*START MEDIA QUERY*/
@@ -569,6 +573,12 @@ s {
 
   #prodetails .single-pro-details {
     width: 100%;
+  }
+
+  #prodetails .single-pro-details select,
+  #prodetails .single-pro-details h2,
+  #prodetails .single-pro-details input {
+    margin-left: 5px;
   }
 
   .section-p1 {
