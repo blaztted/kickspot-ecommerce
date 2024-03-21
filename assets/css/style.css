@@ -550,6 +550,7 @@ s {
   font-size: 26px;
   font-weight: 500;
   line-height: 35px;
+  padding-bottom: 7px;
 }
 
 #contact-details .details h3 {
@@ -574,6 +575,84 @@ s {
   font-weight: 500;
   margin: 0;
   font-size: 14px;
+  color: black;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 25rem;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form span {
+  font-size: 12px;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+  background-color: var(--dark);
+  color: white;
+}
+
+#form-details .people {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4.375rem;
+}
+
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#form-details .people div img {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 50px;
+}
+
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+  color: #505050;
+}
+
+#form-details .people div span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
   color: black;
 }
 
