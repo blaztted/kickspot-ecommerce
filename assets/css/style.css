@@ -301,7 +301,6 @@ footer .col a:hover {
 
 footer .follow {
   margin-top: 20px;
- 
 }
 
 footer .follow i {
@@ -315,17 +314,14 @@ footer .follow i:hover {
 }
 
 footer .copyright {
- 
   width: 100%;
   text-align: center;
 }
 
 footer .icon {
-  display:flex;
+  display: flex;
   align-items: center;
-  justify-content:space-between;
-
-
+  justify-content: space-between;
 }
 
 footer .icon .face {
@@ -339,14 +335,13 @@ footer .icon .face {
   padding-bottom: 50px;
 }
 
-.footcontact{
+.footcontact {
   margin-left: 22rem;
-
 }
 
 .footabout {
-  margin-bottom: 1000px;
-
+  padding-bottom: 23px;
+}
 
 /* SHOP PAGE*/
 #page-header {
@@ -533,7 +528,12 @@ s {
   z-index: -9;
 }
 
-/* ABOUT PAGE */
+/* Contactos*/
+
+#page-header.contact-header {
+  background-image: url("/assets/images/background/erik-mclean-hRmlaSdNwaA-unsplash.jpg");
+  background-position: top 65% right 40%;
+}
 
 /*START MEDIA QUERY*/
 @media (max-width: 799px) {
