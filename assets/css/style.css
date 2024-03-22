@@ -242,6 +242,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   border-radius: 25px 25px 25px 25px;
+  margin-bottom: 5%;
 }
 
 #store h4 {
@@ -265,37 +266,39 @@ body {
 footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  background: #e1e1e1;
 }
 
-footer .col {
+/* footer .col {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 20px;
-}
+} */
 
-footer .col h4 {
+/* footer .col h4 {
   font-size: 14px;
   padding-bottom: 10px;
-}
+} */
 
-footer p {
+/* footer p {
   font-size: 13px;
   margin: 0 0 8px 0;
   color: var(--dark);
 }
 
-footer .col a {
+/* footer .col a {
   font-size: 13px;
   text-decoration: none;
   color: var(--dark);
   margin-bottom: 10px;
-}
+} */
 
-footer .col a:hover {
+/* footer .col a:hover {
   color: var(--darkgreen);
 }
 
@@ -321,7 +324,12 @@ footer .copyright {
 footer .icon {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding-left: 25%;
+  margin-bottom: 2%;
+}
+
+footer .icon i {
+  margin: 0 10px;
 }
 
 footer .icon .face {
@@ -341,6 +349,32 @@ footer .icon .face {
 
 .footabout {
   padding-bottom: 23px;
+}  */
+
+footer {
+  background-color: rgba(0, 0, 0, 0.959);
+}
+
+.col.footcontact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon i {
+  margin: 0 10px;
+  color: var(--light);
+}
+
+.icon i:hover {
+  font-size: 52px;
+  color: var(--lightgreen);
+  cursor: pointer;
 }
 
 /* SHOP PAGE*/
@@ -532,8 +566,12 @@ s {
 
 #page-header.contact-header {
   background-image: url("/assets/images/background/erik-mclean-hRmlaSdNwaA-unsplash.jpg");
+  opacity: 0.9;
   background-position: top 65% right 40%;
 }
+/* #page-header > h2 {
+  opacity: 1 !important;
+} */
 
 #contact-details {
   display: flex;
@@ -658,6 +696,20 @@ s {
 
 /*START MEDIA QUERY*/
 @media (max-width: 799px) {
+  footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -727,7 +779,7 @@ s {
     min-width: 100%;
     height: 70vh;
     border-radius: 10px;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   #store h4 {
@@ -739,6 +791,31 @@ s {
   #store .btn {
     opacity: 1 !important;
     font-weight: 600;
+  }
+
+  /* Contact Page */
+
+  #form-details {
+    padding: 40px;
+  }
+
+  #form-details form {
+    width: 50%;
+  }
+  #form-details .people {
+    padding: 1.375rem;
+    margin-left: 40px;
+    width: 60%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  #form-details .people div img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 50px;
   }
 }
 
