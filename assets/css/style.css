@@ -888,4 +888,43 @@ s {
   #blog .blog-details {
     width: 100%;
   }
+
+  /* Contact Page */
+
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #contact-details .details {
+    width: 100%;
+  }
+
+  #contact-details .map {
+    width: 100%;
+    margin-right: 10%;
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  #form-details .people {
+    gap: 50px;
+  }
+
+  #form-details form {
+    width: 100%;
+    margin-right: 10%;
+  }
+
+  #form-details > form > span {
+    margin-bottom: 5px;
+  }
+
+  /* #form-details > div > div:nth-child(2) > img {
+    width: 105px;
+    height: 105px;
+  } */
 }
