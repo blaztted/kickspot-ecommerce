@@ -25,3 +25,21 @@ if (close) {
     nav.classList.remove("active");
   });
 }
+
+function getSneakerDetails() {
+  return sneakersData.map((sneaker) => {
+    return {
+      id: sneaker.id,
+      brand: sneaker.brand,
+      model: sneaker.model,
+      colorway: sneaker.colorway,
+      releaseYear: sneaker.releaseYear,
+      price: sneaker.price,
+      imageUrl: sneaker.imageUrl,
+      sizesAvailable: sneaker.sizesAvailable,
+      inStock: sneaker.inStock,
+    };
+  });
+}
+const allSneakerDetails = getSneakerDetails();
+console.log(allSneakerDetails);

@@ -697,6 +697,16 @@ s {
 
 /* CART PAGE */
 
+#page-header.cart-header {
+  background-image: url("/assets/images/background/cart2.jpg");
+  opacity: 0.9;
+  background-position: top 48% right 40%;
+}
+
+/* #page-header.cart-header h2 {
+  color: black;
+} */
+
 #cart table {
   width: 100%;
   border-collapse: collapse;
