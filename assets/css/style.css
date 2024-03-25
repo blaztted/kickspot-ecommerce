@@ -367,12 +367,13 @@ footer {
 }
 
 .icon i {
+  font-size: 22px;
   margin: 0 10px;
   color: var(--light);
 }
 
 .icon i:hover {
-  font-size: 52px;
+  font-size: 26px;
   color: var(--lightgreen);
   cursor: pointer;
 }
@@ -565,9 +566,9 @@ s {
 /* Contactos*/
 
 #page-header.contact-header {
-  background-image: url("/assets/images/background/erik-mclean-hRmlaSdNwaA-unsplash.jpg");
+  background-image: url("/assets/images/rui/WhatsApp\ Image\ 2024-03-21\ at\ 14.54.05\ \(2\).jpeg");
   opacity: 0.9;
-  background-position: top 65% right 40%;
+  background-position: top 47% right 40%;
 }
 /* #page-header > h2 {
   opacity: 1 !important;
@@ -692,6 +693,63 @@ s {
   font-size: 16px;
   font-weight: 600;
   color: black;
+}
+
+/* CART PAGE */
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody td {
+  padding-top: 13px;
 }
 
 /*START MEDIA QUERY*/
