@@ -43,3 +43,44 @@ function getSneakerDetails() {
 }
 const allSneakerDetails = getSneakerDetails();
 console.log(allSneakerDetails);
+
+//
+
+function generateProductHTML(sneakersData) {
+  return `
+    <div class="pro">
+      <img src="${sneakersData.imageUrl}" alt="" />
+      <div class="des">
+        <span>${sneakersData.brand}</span>
+        <h5>${sneakersData.model}</h5>
+      
+        <h4>${sneakersData.price}€</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-cart-shopping fa-lg cart"></i></a>
+    </div>
+  `;
+}
+
+// Function to generate star rating HTML
+// function generateStarRating(rating) {
+//   const filledStars = '<i class="fas fa-star"></i>'.repeat(Math.floor(rating));
+//   const halfStar =
+//     rating % 1 === 0.5 ? '<i class="fas fa-star-half-alt"></i>' : "";
+//   const emptyStars = '<i class="far fa-star"></i>'.repeat(
+//     5 - Math.ceil(rating)
+//   );
+//   return filledStars + halfStar + emptyStars;
+// }
+
+// Function to render products on the page
+function renderProducts() {
+  const productContainer = document.getElementById("pro-container"); // Assuming the container has an ID of 'product1'
+  allSneakerDetails.forEach((sneaker) => {
+    // Using allSneakerDetails array
+    const productHTML = generateProductHTML(sneaker); // Pass each sneaker object to generateProductHTML
+    productContainer.innerHTML += productHTML;
+  });
+}
+
+// Call the renderProducts function when the page loads
+window.addEventListener("DOMContentLoaded", renderProducts);
